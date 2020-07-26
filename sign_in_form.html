@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign in Page</title>
+	<meta  name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style type="text/css">
+		
+		*
+		{
+			box-sizing: border-box;
+		}
+		body
+		{
+			background-color: #fff;
+
+		}
+		.wrap
+		{
+			max-width: 400px;
+			height: auto;
+			margin: auto;
+			margin-top: 50px;
+			padding: 0px;
+			font-family: sans-serif;
+			background:#fff;
+			border-radius: 5px;
+			border:1px solid black;
+		}
+		.image
+		{
+			background-color: #77ced9;
+			height: 50px;
+		}
+		img
+		{
+			height:40px;
+			width: 40px;
+		}
+		.top .logo
+		{
+			margin-left: 10px;
+			margin-top: 4px;
+			padding-top: 5px;
+			float: left;
+		}
+		.top h2
+		{
+			font-size:1em;
+			padding-top: 15px;
+			padding-left: 15px;
+			padding-right: 0px;
+			text-align: left;
+			background-color: #77ced9;
+			color:#fff;
+			margin-left: 150px;
+			margin-top: 0;
+			width: 100px;
+		}
+		.top .cross
+		{
+			position: relative;
+			margin-left: 0px;
+			top:-40px;
+			margin-right: 10px;
+			padding: 0px;
+			float: right;
+		}
+		.image::after
+		{
+			content: "";
+			clear: both;
+			display: table;
+		}
+		button
+		{
+			padding:5px;
+			width:90%;
+			box-sizing: border-box;
+			border:none;
+			font-size: 1.3em;
+			border-radius: 5px;
+			font-weight: bold;
+			text-decoration: none;
+			color:#fff;
+			cursor: pointer;
+		}
+		button:nth-child(1)
+		{
+			background:#054078; 
+			margin-left: 20px;
+			margin-bottom: 10px;
+		}
+		button:nth-child(2)
+		{
+			background:#D44638; 
+			margin-left: 20px;
+			margin-bottom: 10px;
+		} 
+		button:nth-child(3)
+		{
+			background:#9ACD32; 
+			margin-left: 20px;
+			margin-bottom: 10px;
+			font-size: 15px;
+			margin-bottom: 60px;
+			margin-top: 30px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}	
+		button:hover
+		{
+			background:rgba(0,0,0,0.6);	
+		}
+		.fa
+		{
+			font-size: 1.3em;
+			font-weight: bold;
+		}
+		form
+		{
+			margin-top: 30px;
+		}
+		.input_mail 
+		{
+			width:100%;
+	        display:inline-block;
+	        position: relative;
+	    }
+	    .input_mail:after
+	    {
+	        font-family: 'FontAwesome';
+	        content: '\f0e0';
+	        font-size: 20px;
+	        color: #d4d4d4;
+	        position: absolute;
+	        right: 30px;
+	        top:18px;
+	    }
+	    .input_pass
+		{
+			width:100%;
+	        display:inline-block;
+	        position: relative;
+	    }
+	    .input_pass:after
+	    {
+	        font-family: 'FontAwesome';
+	        content: '\f13e';
+	        font-size: 20px;
+	        color: #d4d4d4;
+	        position: absolute;
+	        right: 32px;
+	        top:20px;
+	    }
+		input[type=text],input[type=password],input[type=submit]
+		{
+			width:95%;
+			padding: 10px;
+			margin:10px;
+			font-size: 17px;
+			outline: none;
+			border:none;
+			border:1px solid gray;
+		}
+		input[type=submit]
+		{
+			background:#77ced9;
+			border:none;
+			border-radius: 4px;
+			color:#fff;
+			font-size: 15px;
+			font-weight: bold;
+			margin-top: 20px;
+			padding: 10px;
+			margin-bottom: 5px;
+			cursor: pointer;
+		}
+		input[type=submit]:hover
+		{
+			background:#062c59;
+		}
+		.forgotpassword
+		{
+			float: left;
+			padding: 10px;
+			padding-top: 1px;
+			padding-bottom: 20px;
+		}
+		.register
+		{
+			float: right;
+			padding: 10px;
+			padding-top: 1px;
+			padding-bottom: 20px;
+		}
+		.forgotpassword a,.register a
+		{
+			text-decoration: none;
+			font-weight: bold;
+			color: #9da5a8;
+			font-size: 15px;
+			font-family: sans-serif;
+		}
+		.forgotpassword a:hover,.register a:hover
+		{
+			color:#4e4e46; 
+		}
+		.line p
+		{
+			display: flex;
+			flex-direction: row;
+			width:100%;
+			padding-right: 10px;
+			padding-left: 10px;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			color:#bab5b9;
+		}
+		.line p:before,.line p:after
+		{
+			content: ""; 
+            flex: 1 1; 
+            border-bottom: 2px solid #bab5b9; 
+            margin: auto; 
+		}
+
+
+
+	</style>
+
+</head>
+<body>
+
+	<div class="wrap">
+		<div class="image">
+			<div class="top">
+				<img src="logo.png" class="logo">
+			</div>
+			<div class="top">
+				<h2> Sign in</h2>
+			</div>
+			<div class="top">
+				<a href="index.html"><img src="cross.png" class="cross" align="right"></a>
+			</div>
+		</div>
+		
+		<form action="success.html">
+			
+			<div class="input_mail">
+				<input type="text" placeholder="mail@example.com">
+			</div>
+			<br>
+			<div class="input_pass">
+				<input type="password" placeholder="password">
+			</div>
+			<br>
+
+				<input type="submit" value="SIGN IN">
+			</form>
+			<span class="forgotpassword">
+				<a href="#">Forgot your password?</a>
+			</span>
+			<span class="register">
+				<a href="#">Register!</a>
+			</span>
+
+		
+			<!-- ------------or--------- -->
+		<div class="line">
+			  	<p>&nbsp;&nbsp;&nbsp;OR&nbsp;&nbsp;&nbsp;</p>
+		</div> 
+
+		<div class="social-media">
+			<button onclick="window.location.href = 'https://www.facebook.com/mypage';"><i class="fa fa-facebook"></i> </button>
+			<button onclick="window.location.href = 'https://accounts.google.com/login';"><i class="fa fa-google"></i> </button>
+			<button onclick="window.location.href = 'https://login.epam.com/';">< EPAM LOGIN > </button>
+		</div>
+
+			
+	</div>
+
+
+
+</body>
+</html>
